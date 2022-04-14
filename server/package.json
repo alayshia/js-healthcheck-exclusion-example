@@ -1,0 +1,27 @@
+{
+  "name": "js-healthcheck-exclusion-example",
+  "version": "1.0.0",
+  "description": "Example of excluding /health endpoint from traces",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r ./tracing.js app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alayshia/js-healthcheck-exclusion-example.git"
+  },
+  "author": "Alayshia Knighten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alayshia/js-healthcheck-exclusion-example/issues"
+  },
+  "homepage": "https://github.com/alayshia/js-healthcheck-exclusion-example#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.3",
+    "@opentelemetry/api": "^1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "^0.28.0",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.27.0",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "express": "^4.17.3"
+  }
+}
