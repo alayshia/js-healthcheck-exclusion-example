@@ -33,9 +33,6 @@ const sdk = new NodeSDK({
   traceExporter,
 // Instrumentations allow you to add auto-instrumentation packages
   instrumentations: [
-    // new HttpInstrumentation(
-    //   { ignoreIncomingPaths: [/^.*\/health.*$/] }
-    //   ),
     getNodeAutoInstrumentations({
       '@opentelemetry/instrumentation-http': {
         ignoreIncomingPaths: [/^.*\/health.*$/]
